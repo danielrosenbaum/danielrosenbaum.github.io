@@ -15,33 +15,257 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <script src="https://use.fontawesome.com/2aa98a8435.js"></script>
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/logo.png">
 
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/index.js"></script>
+
+
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Primary Page Layout -->
   <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Daniel Rosenbaum</h4>
-        <p>Hello World!</p>
-        <p>Website coming soon!</p>
+
+    <!-- Navbar -->
+    <div class="sticky-nav">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li id="about-btn" class="navbar-item"><a class="navbar-link">about</a></li>
+        <li id="proj-btn" class="navbar-item"><a class="navbar-link">projects</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="row">
+      <div class="twelve column title">
+        <pre><code><h2>Daniel Rosenbaum</h2><h5><span class="typed"></span></h5></code></pre>
       </div>
+    </div>
+
+    <!-- About Icons -->
+    <div class="row">
+      <div class="twelve columns proj-style">
+        <a href="mailto:daniel.rosenbaum10@gmail.com?Subject=Hello%20There!">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-envelope-square fa-stack-2x" aria-hidden="true"></i>
+          </span></a>
+        <a href="https://www.linkedin.com/in/daniel-rosenbaum/" target="_blank">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class=" fa fa-linkedin-square fa-stack-2x" aria-hidden="true"></i>
+          </span></a>
+        <a href="https://github.com/danielrosenbaum" target="_blank">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class=" fa fa-github-square fa-stack-2x" aria-hidden="true" ></i>
+          </span></a>
+        <a href="images/resume.pdf" target="_blank">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="row">
+      <div class="twelve column proj-style">
+        <pre><code><h3>Projects</h3></code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+          <img id="extension-btn" class="value-img proj-img" src="images/extension.png">
+          <img id="mini-hoop-btn" class="value-img proj-img" src="images/mhb.png">
+      </div>
+      <div class="six columns">
+          <img id="database-btn" class="value-img proj-img" src="images/sse.png">
+          <img id="dabari-btn" class="value-img proj-img" src="images/dtm.png">
+          <img id="craigslist-btn" class="value-img proj-img" src="images/cr.png">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="twelve column footer">
+          <h5 class="modal_subtitle">Thank you for visiting my site!</h5>
+          <h6 class="modal_info">&copy; Daniel Rosenbaum | 2017</h6>
+          <a href="mailto:daniel.rosenbaum10@gmail.com?Subject=Hello%20There!">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-envelope-square fa-stack-2x" aria-hidden="true"></i>
+          </span></a>
+        <a href="https://www.linkedin.com/in/daniel-rosenbaum/" target="_blank">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class=" fa fa-linkedin-square fa-stack-2x" aria-hidden="true"></i>
+          </span></a>
+        <a href="https://github.com/danielrosenbaum" target="_blank">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class=" fa fa-github-square fa-stack-2x" aria-hidden="true" ></i>
+          </span></a>
+        <a href="images/resume.pdf" target="_blank">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- MODALS -->
+
+    <!-- The Chrome Extension Modal -->
+    <div id="extension-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">ASPC Reviews</h5>
+            <p class="modal_subtitle">Google Chrome Extension</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-half column">
+            <div class="modal_info">
+              <p>Built a pop-up extension that allows students to easily access and view professor ratings from the ASPC, school run website, site. The extension allows for a table view of professors, which can be sorted by header and it is currently in use by around 5% of the student body. In the future, I want to add a comparison feature to easily search and compare two professors and I want to update the website API so I would be able to view course reviews as well.</p>
+              <p>Tools: JavaScript, HTML, CSS</p>
+              <a href="https://github.com/danielrosenbaum/aspc-reviews" target="_blank">Check it out on GitHub</a><br>
+              <a href="https://chrome.google.com/webstore/detail/aspc-reviews/dfmonlpnhaampencbahekbloekmcihmd" target="_blank">View it on the Chrome Web Store</a>
+            </div>
+          </div>
+          <div class="one-half column">
+            <img class="value-img modal-img" src="images/extension.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Mini Hoop Basketball Modal -->
+    <div id="mini-hoop-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">Mini Hoop Basketball</h5>
+            <p class="modal_subtitle">iOS App</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-half column">
+            <div class="modal_info">
+              <p>Currently building a game that allows players to shoot the basketball and try to score as many baskets in the given amount of time while keeping a leaderboard. My next step is to implement a timer so that the player's goal is to make the most baskets in a set amount of time. I am learning Swift and Xcode as I go, but I love being able to combine my two passions of basketball and development.</p>
+              <p>Tools: Swift, Xcode</p>
+              <a href="https://github.com/danielrosenbaum/mini-hoop-basketball" target="_blank">Check it out on GitHub</a>
+            </div>
+          </div>
+          <div class="one-half column">
+            <img class="value-img modal-img mini-hoop-img" src="images/mhb.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The SSE Database Reader Modal -->
+    <div id="database-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">SSE Database Reader</h5>
+            <p class="modal_subtitle">Web Application</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-half column">
+            <div class="modal_info">
+              <p>Worked with an Economics Professor at Pomona College to create an easily accessible and editable database with information from the Shanghai Stock Exchange. I scraped online web data into a database using Python, Selenium and the BeautifulSoup library which was then handled using MySQL and SQL. To make the database usable I built a Flask run website using HTML, JQuery and Bootstrap that allows users to search the different datasets by date and variables and produces a.csv file.</p>
+              <p>Tools: Python, HTML, CSS, SQL, Selenium</p>
+              <p>Frameworks: Flask, Heroku</p>
+              <a href="https://github.com/danielrosenbaum/sse-database-reader" target="_blank">Check it out on GitHub</a><br>
+              <a href="https://ssedatabasereader.herokuapp.com" target="_blank">View the website</a>
+            </div>
+          </div>
+          <div class="one-half column">
+            <img class="value-img modal-img" src="images/sse.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Dabari The Monkey Modal -->
+    <div id="dabari-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">Dabari the Monkey</h5>
+            <p class="modal_subtitle">Computer Game</p>
+            <p class="modal_info">The game that started it all. I made this by teaching myself step by step using Stencyl and it created a drive and passion to code ever since.</p>
+            <p class="modal_info">Press in the game screen and enjoy!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="embed-full-pg">
+            <embed src="images/DAF.swf" height="480" width="640">
+          </div>
+          <div class="embed-small">
+            <p class="modal_info">Sorry! To play the game you must be on a bigger device.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Craigslist Relister Modal -->
+    <div id="craigslist-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">Craigslist Relister</h5>
+            <p class="modal_subtitle">Python Script</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-half column">
+            <div class="modal_info">
+              <p>A script that allows the user to relist all of their Craiglist items that have expired. Future directions will include a Craigslist Lister to make the process much easier and user friendly and also a manager of posts to easily see which have expired and automatically relist those.</p>
+              <p>Tools: Python, Selenium</p>
+              <a href="https://github.com/danielrosenbaum/craigslist-relister" target="_blank">Check it out on GitHub</a>
+            </div>
+          </div>
+          <div class="one-half column">
+            <img id="craigslist-btn" class="value-img modal-img" src="images/cr.png">
+          </div>
+        </div>
     </div>
   </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- End Document -->
 </body>
 </html>
