@@ -46,8 +46,9 @@
     <div class="sticky-nav">
     <nav class="navbar">
       <ul class="navbar-list">
-        <li id="about-btn" class="navbar-item"><a class="navbar-link">about</a></li>
+        <li id="about-btn" class="navbar-item"><a class="navbar-link"><img class="logo-icon" src="images/logo.png"></a></li>
         <li id="proj-btn" class="navbar-item"><a class="navbar-link">projects</a></li>
+        <li id="bask-btn" class="navbar-item"><a class="navbar-link">basketball</a></li>
       </ul>
     </nav>
     </div>
@@ -70,17 +71,23 @@
         <a href="https://www.linkedin.com/in/daniel-rosenbaum/" target="_blank">
           <span class="fa-stack fa-4x">
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
-            <i class=" fa fa-linkedin-square fa-stack-2x" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-stack-2x" aria-hidden="true"></i>
           </span></a>
         <a href="https://github.com/danielrosenbaum" target="_blank">
           <span class="fa-stack fa-4x">
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
-            <i class=" fa fa-github-square fa-stack-2x" aria-hidden="true" ></i>
+            <i class="fa fa-github-square fa-stack-2x" aria-hidden="true" ></i>
           </span></a>
-        <a href="images/DanielRosenbaumResume.pdf" target="_blank">
+        <a href="resumes/DanielRosenbaumResume.pdf" target="_blank">
           <span class="fa-stack fa-4x">
             <i class="fa fa-square fa-stack-2x"></i>
             <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="https://www.instagram.com/d_baum5" target="_blank">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
           </span>
         </a>
       </div>
@@ -94,13 +101,39 @@
     </div>
     <div class="row">
       <div class="six columns">
-          <img id="extension-btn" class="value-img proj-img" src="images/extension.png">
-          <img id="mini-hoop-btn" class="value-img proj-img" src="images/mhb.png">
+          <img id="extension-btn" class="proj-img" src="images/projects/extension.png">
+          <img id="mini-hoop-btn" class="proj-img" src="images/projects/mhb.png">
       </div>
       <div class="six columns">
-          <img id="database-btn" class="value-img proj-img" src="images/sse.png">
-          <img id="dabari-btn" class="value-img proj-img" src="images/dtm.png">
-          <img id="craigslist-btn" class="value-img proj-img" src="images/cr.png">
+          <img id="database-btn" class="proj-img" src="images/projects/sse.png">
+          <img id="dabari-btn" class="proj-img" src="images/projects/dtm.png">
+          <img id="craigslist-btn" class="proj-img" src="images/projects/cr.png">
+      </div>
+    </div>
+
+    <!-- Basketball -->
+    <div id="basketball" class="row">
+      <div class="twelve column proj-style">
+        <pre><code><h3>Basketball</h3></code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Basketball Highlight Tape -->
+      <div class="four columns contain">
+          <img id="highlights-btn" class="bball-img" title="Highlight Video" src="images/bball/video.jpeg">
+          <div class="bball-text"><code>Highlight Tape</code></div>
+      </div>
+      <!-- Basketball News/Articles -->      
+      <div class="four columns contain">
+        <img id="bball-news-btn" class="bball-img" title="News/Articles" src="images/bball/news.png">
+        <div class="bball-text"><code>News/Articles</code></div>
+      </div>
+      <!-- Basketball Resume -->
+      <div class="four columns contain">
+        <a href="resumes/DanielRosenbaumBasketballResume.pdf" target="_blank" style="cursor:default">
+          <img id="ball-resume-btn" class="bball-img" src="images/bball/bballresume.jpeg">
+          <div class="bball-text"><code>Resume</code></div>
+        </a>
       </div>
     </div>
 
@@ -108,7 +141,7 @@
     <div class="row">
       <div class="twelve column footer">
           <h5 class="modal_subtitle">Thank you for visiting my site!</h5>
-          <h6 class="modal_info">&copy; Daniel Rosenbaum | 2017</h6>
+          <h6 class="modal_info">&copy; Daniel Rosenbaum | 2019</h6>
           <a href="mailto:daniel.rosenbaum10@gmail.com?Subject=Hello%20There!">
           <span class="fa-stack fa-2x">
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
@@ -124,10 +157,16 @@
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
             <i class=" fa fa-github-square fa-stack-2x" aria-hidden="true" ></i>
           </span></a>
-        <a href="images/DanielRosenbaumResume.pdf" target="_blank">
+        <a href="resumes/DanielRosenbaumResume.pdf" target="_blank">
           <span class="fa-stack fa-2x">
             <i class="fa fa-square fa-stack-2x"></i>
             <i class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="https://www.instagram.com/d_baum5" target="_blank">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
           </span>
         </a>
       </div>
@@ -157,7 +196,7 @@
             </div>
           </div>
           <div class="one-half column">
-            <img class="value-img modal-img" src="images/extension.png">
+            <img class="modal-img" src="images/projects/extension.png">
           </div>
         </div>
       </div>
@@ -183,7 +222,7 @@
             </div>
           </div>
           <div class="one-half column">
-            <img class="value-img modal-img mini-hoop-img" src="images/mhb.png">
+            <img class="modal-img mini-hoop-img" src="images/projects/mhb.png">
           </div>
         </div>
       </div>
@@ -211,7 +250,7 @@
             </div>
           </div>
           <div class="one-half column">
-            <img class="value-img modal-img" src="images/sse.png">
+            <img class="modal-img" src="images/projects/sse.png">
           </div>
         </div>
       </div>
@@ -231,7 +270,7 @@
           </div>
         </div>
         <div class="row">
-            <embed class="embed-full-pg" src="images/DAF.swf" height="480" width="640">
+            <embed class="embed-full-pg" src="images/projects/DAF.swf" height="480" width="640">
           <div class="embed-small">
             <p class="modal_info">Sorry! To play the game you must be on a bigger device.</p>
           </div>
@@ -258,10 +297,101 @@
             </div>
           </div>
           <div class="one-half column">
-            <img id="craigslist-btn" class="value-img modal-img" src="images/cr.png">
+            <img id="craigslist-btn" class="modal-img" src="images/projects/cr.png">
           </div>
         </div>
+      </div>
     </div>
+
+    <!-- The Basketball Highlights Modal -->
+    <div id="highlights-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">All-American Senior Season Highlights</h5>
+            <p class="modal_subtitle">2018-19 Pomona-Pitzer</p>
+          </div>
+        </div>
+        <div class="row">
+           <iframe class="embed-full-pg" width="640" height="360" src="https://www.youtube.com/embed/384VCG_FInk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Basketball News Modal -->
+    <div id="bball-news-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Title Row -->
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">News and Articles</h5>
+          </div>
+        </div>
+
+        <!-- Info --> 
+        <div class="row">
+          <div class="four columns">
+            <div class="contain">
+              <a href="https://www.pomona.edu/news/2019/02/14-trio-leads-sagehens-nations-top-10" target="_blank">
+                <img class="bball-news-img" src="images/bball/news/Trio.jpg">
+                <div class="bball-news-text"><code class="bball-news-code">Trio Leads Sagehens into Nation's Top 10</code></div>
+              </a>
+            </div>
+
+            <div class="contain">
+              <a href="https://www.sagehens.com/sports/mbkb/2018-19/releases/20190508l8xpvc" target="_blank">
+                <img class="bball-news-img" src="images/bball/news/All-American.jpg">
+                <div class="bball-news-text"><code class="bball-news-code">Rosenbaum Earns D3Hoops.com All-American Honors</code></div>
+              </a>
+            </div>
+            
+          
+          </div>
+          
+          <div class="four columns">
+
+            <div class="contain">
+              <a href="https://www.latimes.com/sports/la-sp-pomona-pitzer-ncaa-basketball-20190227-story.html" target="_blank">
+                <img class="bball-news-img" src="images/bball/news/LA-Times.jpeg">
+                <div class="bball-news-text"><code class="bball-news-code">As the likes of USC and UCLA have struggled, tiny Pomona-Pitzer has big basketball dreams</code></div>
+              </a>
+            </div>
+
+
+            <div class="contain">
+              <a href="https://www.sagehens.com/sports/mbkb/2018-19/releases/20190314p865se" target="_blank">
+                <img class="bball-news-img" src="images/bball/news/Academic-All-American.jpg">
+                <div class="bball-news-text"><code class="bball-news-code">Daniel Rosenbaum Named Academic All-American</code></div>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="four columns">
+            <div class="contain">
+              <a href="https://www.sagehens.com/sports/mbkb/2018-19/releases/2019022421w8lz " target="_blank">
+                <img class="bball-news-img" src="images/bball/news/SCIAC-Champs.jpg">
+                <div class="bball-news-text"><code class="bball-news-code">No. 14 Sagehens Win First SCIAC Title Since 2008, Clinch NCAA Berth</code></div>
+              </a>
+            </div>
+
+            <div class="contain">
+              <a href="https://www.thesciac.org/sports/mbkb/2018-19/releases/20190221yjqsc3" target="_blank">
+                <img class="bball-news-img" src="images/bball/news/All-SCIAC.jpg">
+                <div class="bball-news-text"><code class="bball-news-code">SCIAC Men's Basketball All-Conference Honors Announced</code></div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
   </div>
 
 <!-- End Document -->

@@ -5,9 +5,8 @@
 // check it out here: https://github.com/mattboldt/typed.js/
 $(function(){
 	$(".typed").typed({
-		strings: ["I enjoy eating pastries.", "I like to solve problems.", "I play basketball.", 
-		"I have a passion for coding.", "I love to sleep.", "I am a shoe enthusiast.", 
-		"I think outside the box."],
+		strings: ["I enjoy baked goods.", "I like to solve problems.", "I play professional basketball.", 
+		"I have a passion for coding.", "I am a shoe enthusiast."],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
@@ -80,6 +79,18 @@ $(function(){
 	  modal = $("#craigslist-modal");
 	});
 
+	// basketball highlights modal
+	$( "#highlights-btn" ).click(function () {
+	  $("#highlights-modal").css( 'display', 'block' );
+	  modal = $("#highlights-modal");
+	});
+
+	// basketball news modal
+	$( "#bball-news-btn" ).click(function () {
+	  $("#bball-news-modal").css( 'display', 'block' );
+	  modal = $("#bball-news-modal");
+	});
+
 	// close the modal on clicks to the 'X'
 	$ ( ".close" ).click( function () {
 	  $( modal ).css( 'display', 'none' );
@@ -99,13 +110,19 @@ $(function(){
 	$("#about-btn").click(function() {
     	$('html, body').animate({
         	scrollTop: $("#about").offset().top
-    	}, 1000);
+    	}, 2000);
 	});
 
 	$("#proj-btn").click(function() {
     	$('html, body').animate({
         	scrollTop: $("#projects").offset().top 
-        }, 1000);
+        }, 2000);
+	});
+
+	$("#bask-btn").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#basketball").offset().top 
+        }, 2000);
 	});
 });
 
