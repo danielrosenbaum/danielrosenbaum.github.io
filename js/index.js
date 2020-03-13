@@ -107,7 +107,7 @@ $(function(){
 	// Make sure correct modal opens with specific URL
 	// Scroll to Blog section of web page
 	if(window.location.href.indexOf('#sagehen-goal-analysis') != -1) {
-		$('html, body').animate({scrollTop: $("#blog").offset().top}, 100);
+		$('html, body').animate({scrollTop: $("#trust-the-processor").offset().top}, 100);
 		$("#sagehen-goal-analysis").css( 'display', 'block' );
 		modal = $("#sagehen-goal-analysis");
  	}
@@ -136,7 +136,7 @@ $(function(){
 
 	$("#blog-btn").click(function() {
     	$('html, body').animate({
-        	scrollTop: $("#blog").offset().top
+        	scrollTop: $("#trust-the-processor").offset().top
         }, 2000);
 	});
 });
