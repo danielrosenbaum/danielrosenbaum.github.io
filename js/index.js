@@ -6,7 +6,7 @@
 $(function(){
 	$(".typed").typed({
 		strings: ["I enjoy baked goods.", "I like to solve problems.", "I play professional basketball.",
-		"I have a passion for coding.", "I am a shoe enthusiast.", "I like to make things."],
+		"I have a passion for coding.", "I am a sneakerhead.", "I like to build things."],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
