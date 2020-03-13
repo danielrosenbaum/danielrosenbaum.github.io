@@ -5,8 +5,8 @@
 // check it out here: https://github.com/mattboldt/typed.js/
 $(function(){
 	$(".typed").typed({
-		strings: ["I enjoy baked goods.", "I like to solve problems.", "I play professional basketball.", 
-		"I have a passion for coding.", "I am a shoe enthusiast."],
+		strings: ["I enjoy baked goods.", "I like to solve problems.", "I play professional basketball.",
+		"I have a passion for coding.", "I am a shoe enthusiast.", "I like to make things."],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
@@ -91,9 +91,10 @@ $(function(){
 	  modal = $("#bball-news-modal");
 	});
 
-	// close the modal on clicks to the 'X'
-	$ ( ".close" ).click( function () {
-	  $( modal ).css( 'display', 'none' );
+	// basketball news modal
+	$( "#blog-one-btn" ).click(function () {
+	  $("#sagehen-goal-analysis").css( 'display', 'block' );
+	  modal = $("#sagehen-goal-analysis");
 	});
 
 	// close the modal on clicks outside the modal
@@ -102,12 +103,20 @@ $(function(){
 	    $( modal ).css( 'display', 'none');
 	  }
 	});
+
+	// Make sure correct modal opens with specific URL
+	// Scroll to Blog section of web page
+	if(window.location.href.indexOf('#sagehen-goal-analysis') != -1) {
+		$('html, body').animate({scrollTop: $("#blog").offset().top}, 100);
+		$("#sagehen-goal-analysis").css( 'display', 'block' );
+		modal = $("#sagehen-goal-analysis");
+ 	}
 });
 
 
 // Scroll page to sections
 $(function(){
-	$("#about-btn").click(function() {
+	$("#logo-btn").click(function() {
     	$('html, body').animate({
         	scrollTop: $("#about").offset().top
     	}, 2000);
@@ -115,18 +124,19 @@ $(function(){
 
 	$("#proj-btn").click(function() {
     	$('html, body').animate({
-        	scrollTop: $("#projects").offset().top 
+        	scrollTop: $("#projects").offset().top
         }, 2000);
 	});
 
 	$("#bask-btn").click(function() {
     	$('html, body').animate({
-        	scrollTop: $("#basketball").offset().top 
+        	scrollTop: $("#basketball").offset().top
+        }, 2000);
+	});
+
+	$("#blog-btn").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#blog").offset().top
         }, 2000);
 	});
 });
-
-
-
-
-

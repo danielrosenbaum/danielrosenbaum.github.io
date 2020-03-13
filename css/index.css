@@ -1,6 +1,5 @@
 /*index.css*/
 
-
 /* SMALL DEVICES */
 @media screen and (max-width: 330px) {
   .glyphicon {
@@ -47,7 +46,6 @@
   }
 }
 
-
 /* BIG DEVICES */
 @media screen and (min-width: 800px) {
   .glyphicon {
@@ -77,14 +75,14 @@
     text-align: right;
   }
   .navbar > .container {
-    width: 100%; 
+    width: 100%;
   }
   .navbar + .docs-section {
-    border-top-width: 0; 
+    border-top-width: 0;
   }
   .navbar-list {
     list-style: none;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
   .navbar-link {
     text-transform: uppercase;
@@ -94,82 +92,62 @@
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222; 
+    color: #222;
     display: inline-block;
   }
   .navbar-link.active {
-    color: #33C3F0; 
+    color: #33C3F0;
   }
   .embed-small{
     display: none;
   }
   .embed-full-pg{
     display: block;
-    left: 0; 
-    right: 0; 
-    margin: auto; 
+    left: 0;
+    right: 0;
+    margin: auto;
     display: block;
   }
 }
 
-#about-btn {
+/********** HEADERs **********/
+
+.title {
+  margin-top: 20%;
+  height: 50%;
+  text-align: center;
+}
+
+#logo-btn {
   float: left;
 }
 
 .logo-icon {
-   width: 50px; 
-   margin-left: 20px; 
+   width: 50px;
+   margin-left: 20px;
    padding: 10px;
 }
 
-/********** HEADER **********/
-.title {
-  margin-top: 20%; 
-  height: 50%; 
+.header-center{
+  margin-top: 10%;
   text-align: center;
 }
 
-/********** PROJECTS **********/
-.proj-style{
-  margin-top: 10%; 
-  text-align: center;
-}
-.proj-img {
-	left: 0;
-	right: 0;
-	margin: auto;
-	display: block;
-	padding: 20px;
-	background-color: lightsteelblue;
-  margin-top: 18px;
-  margin-bottom: 18px;
-	opacity: 1;
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-}
+/********** GENERIC TILES **********/
 
-.proj-img:hover {
-  opacity: 0.5;
-}
-
-/********** BASKETBALL **********/
-.bball-img {
+.tile {
   left: 0;
   right: 0;
   margin: auto;
   display: block;
   padding: 20px;
-  background-color: sandybrown;
   margin-top: 18px;
   margin-bottom: 18px;
   opacity: 1;
-  width: 85%;
-  height: auto;
   border-radius: 10px;
 }
 
-.bball-text {
+.tile-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -185,38 +163,42 @@
   text-align: center;
 }
 
-/* show the text */
-.contain:hover .bball-text, .bball-news-text {
-  opacity: 1;
-  color: black;
+/* fade tile on hover */
+.contain:hover .tile, .tile:hover{
+  opacity: 0.5;
 }
 
-/* fade the img */
-.contain:hover .bball-img, .bball-news-img{
-  opacity: 0.5;
+/* show text on hover */
+.tile:hover + .tile-text, .tile-text:hover, .contain:hover .tile-text {
+  opacity: 1;
+}
+
+/********** PROJECTS **********/
+
+.proj-img {
+	background-color: lightsteelblue;
+  width: 90%;
+  height: auto;
+}
+
+/********** BASKETBALL **********/
+
+.bball-img {
+  background-color: sandybrown;
+  width: 85%;
+  height: auto;
 }
 
 /* news/articles image */
 .bball-news-img {
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: block;
   padding: 0px;
-  /*background-color: sandybrown;*/
-  margin-top: 18px;
   margin-bottom: 5px;
-  opacity: 1;
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
 .bball-news-text {
-/*  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   opacity: 1;
   color: black;
   border: none;
@@ -226,13 +208,50 @@
 .bball-news-code {
   display:block;
   white-space:pre-wrap;
-  text-decoration: none; 
-}
-
-/* remove underline for article titles */
-.contain a {
   text-decoration: none;
 }
+
+
+/********** BLOG **********/
+
+.blog-img {
+  background-color: #A9F5BC;
+  width: 95%;
+  height: auto;
+}
+
+.blog-text {
+  font-size: 25px;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+.article-text{
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+.article-heading {
+  text-decoration: underline;
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /********** TYPED.JS **********/
 /*Add custom cursor so it auto inherits font styles*/
@@ -294,24 +313,6 @@
     height: 80vh;
 }
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    top: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .modal-img{
   left: 0;
   right: 0;
@@ -349,7 +350,7 @@
 }
 
 .mini-hoop-img{
-  height: 60vh; 
+  height: 60vh;
   width: auto;
 }
 
@@ -369,6 +370,6 @@
 /********** FOOTER **********/
 .footer{
   margin-top: 10%;
-  margin-bottom: 10%; 
+  margin-bottom: 10%;
   text-align: center;
 }

@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Daniel Rosenbaum</title>
-  <meta name="description" content="A personal website and portfolio for Daniel Rosenbaum, professional basketball player at Hapoel Jerusalem and graduate of Computer Science from Pomona College.">
+  <meta name="description" content="A personal website, portfolio and blog for Daniel Rosenbaum, professional basketball player at Hapoel Jerusalem and Computer Science graduate from Pomona College.">
   <meta name="author" content="Daniel Rosenbaum">
 
   <!-- Mobile Specific Metas
@@ -17,13 +17,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://use.fontawesome.com/2aa98a8435.js"></script>
 
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/index.css">
-
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -49,9 +47,10 @@
     <div class="sticky-nav">
     <nav class="navbar">
       <ul class="navbar-list">
-        <li id="about-btn" class="navbar-item"><a class="navbar-link"><img class="logo-icon" src="images/logo.png"></a></li>
+        <li id="logo-btn" class="navbar-item"><a class="navbar-link"><img class="logo-icon" src="images/logo.png"></a></li>
         <li id="proj-btn" class="navbar-item"><a class="navbar-link">projects</a></li>
         <li id="bask-btn" class="navbar-item"><a class="navbar-link">basketball</a></li>
+        <li id="blog-btn" class="navbar-item"><a class="navbar-link">blog</a></li>
       </ul>
     </nav>
     </div>
@@ -65,7 +64,7 @@
 
     <!-- About Icons -->
     <div class="row">
-      <div class="twelve columns proj-style">
+      <div class="twelve columns header-center">
         <a href="mailto:daniel.rosenbaum10@gmail.com?Subject=Hello%20There!">
           <span class="fa-stack fa-4x">
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
@@ -97,54 +96,75 @@
     </div>
 
     <!-- Projects -->
+    <!-- Title -->
     <div id="projects" class="row">
-      <div class="twelve column proj-style">
+      <div class="twelve column header-center">
         <pre><code><h3>Projects</h3></code></pre>
       </div>
     </div>
+    <!-- Tiles -->
     <div class="row">
       <div class="six columns">
-          <img id="extension-btn" class="proj-img" src="images/projects/extension.png">
-          <img id="mini-hoop-btn" class="proj-img" src="images/projects/mhb.png">
+          <img id="extension-btn" class="tile proj-img" src="images/projects/extension.png">
+          <img id="mini-hoop-btn" class="tile proj-img" src="images/projects/mhb.png">
       </div>
       <div class="six columns">
-          <img id="database-btn" class="proj-img" src="images/projects/sse.png">
-          <img id="dabari-btn" class="proj-img" src="images/projects/dtm.png">
-          <img id="craigslist-btn" class="proj-img" src="images/projects/cr.png">
+          <img id="database-btn" class="tile proj-img" src="images/projects/sse.png">
+          <img id="dabari-btn" class="tile proj-img" src="images/projects/dtm.png">
+          <img id="craigslist-btn" class="tile proj-img" src="images/projects/cr.png">
       </div>
     </div>
 
     <!-- Basketball -->
+    <!-- Title -->
     <div id="basketball" class="row">
-      <div class="twelve column proj-style">
+      <div class="twelve column header-center">
         <pre><code><h3>Basketball</h3></code></pre>
       </div>
     </div>
+    <!-- Tiles -->
     <div class="row">
       <!-- Basketball Highlight Tape -->
-      <div class="four columns contain">
-          <img id="highlights-btn" class="bball-img" title="Highlight Video" src="images/bball/video.jpeg">
-          <div class="bball-text"><code>Highlight Tape</code></div>
+      <div id="highlights-btn" class="four columns contain">
+          <img class="tile bball-img" title="Highlight Video" src="images/bball/video.jpeg">
+          <span class="tile-text"><code>Highlight Tape</code></span>
       </div>
-      <!-- Basketball News/Articles -->      
-      <div class="four columns contain">
-        <img id="bball-news-btn" class="bball-img" title="News/Articles" src="images/bball/news.png">
-        <div class="bball-text"><code>News/Articles</code></div>
+      <!-- Basketball News/Articles -->
+      <div id="bball-news-btn"  class="four columns contain">
+        <img class="tile bball-img" title="News/Articles" src="images/bball/news.png">
+        <div class="tile-text"><code>News/Articles</code></div>
       </div>
       <!-- Basketball Resume -->
-      <div class="four columns contain">
+      <div id="ball-resume-btn" class="four columns contain">
         <a href="resumes/DanielRosenbaumBasketballResume.pdf" target="_blank" style="cursor:default">
-          <img id="ball-resume-btn" class="bball-img" src="images/bball/bballresume.jpeg">
-          <div class="bball-text"><code>Resume</code></div>
+          <img class="tile bball-img" src="images/bball/bballresume.jpeg">
         </a>
+        <div class="tile-text"><code>Resume</code></div>
       </div>
+    </div>
+
+    <!-- Blog -->
+    <!-- Title -->
+    <div id="blog" class="row">
+      <div class="twelve column header-center">
+        <pre><code><h3>Trust the Processor</h3><h5>A Basketball Analytics Blog</h5></code></pre>
+      </div>
+    </div>
+    <!-- Tiles -->
+    <div class="row">
+      <div class="twelve columns">
+        <!-- Blog Post One -->
+        <div class="contain" id="blog-one-btn">
+          <img class="tile blog-img" src="images/blog/sagehens.jpeg">
+          <div class="tile-text blog-text"><code>Pomona-Pitzer Sagehen Goal Analysis</code></div>
+        </div>
     </div>
 
     <!-- Footer -->
     <div class="row">
       <div class="twelve column footer">
           <h5 class="modal_subtitle">Thank you for visiting my site!</h5>
-          <h6 class="modal_info">&copy; Daniel Rosenbaum | 2019</h6>
+          <h6 class="modal_info">&copy; Daniel Rosenbaum | 2020</h6>
           <a href="mailto:daniel.rosenbaum10@gmail.com?Subject=Hello%20There!">
           <span class="fa-stack fa-2x">
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
@@ -182,7 +202,6 @@
     <div id="extension-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">ASPC Reviews</h5>
@@ -209,7 +228,6 @@
     <div id="mini-hoop-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">Mini Hoop Basketball</h5>
@@ -235,7 +253,6 @@
     <div id="database-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">SSE Database Reader</h5>
@@ -263,7 +280,6 @@
     <div id="dabari-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">Dabari the Monkey</h5>
@@ -284,7 +300,6 @@
     <!-- The Craigslist Relister Modal -->
     <div id="craigslist-modal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">Craigslist Relister</h5>
@@ -310,7 +325,6 @@
     <div id="highlights-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">All-American Senior Season Highlights</h5>
@@ -327,71 +341,311 @@
     <div id="bball-news-modal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
         <!-- Title Row -->
         <div class="row">
           <div class="twelve columns">
             <h5 class="modal_title">News and Articles</h5>
           </div>
         </div>
-
-        <!-- Info --> 
+        <!-- Info -->
         <div class="row">
           <div class="four columns">
             <div class="contain">
               <a href="https://www.pomona.edu/news/2019/02/14-trio-leads-sagehens-nations-top-10" target="_blank">
-                <img class="bball-news-img" src="images/bball/news/Trio.jpg">
+                <img class="tile bball-news-img" src="images/bball/news/Trio.jpg">
                 <div class="bball-news-text"><code class="bball-news-code">Trio Leads Sagehens into Nation's Top 10</code></div>
               </a>
             </div>
-
             <div class="contain">
               <a href="https://www.sagehens.com/sports/mbkb/2018-19/releases/20190508l8xpvc" target="_blank">
-                <img class="bball-news-img" src="images/bball/news/All-American.jpg">
+                <img class="tile bball-news-img" src="images/bball/news/All-American.jpg">
                 <div class="bball-news-text"><code class="bball-news-code">Rosenbaum Earns D3Hoops.com All-American Honors</code></div>
               </a>
             </div>
-            
-          
           </div>
-          
           <div class="four columns">
-
             <div class="contain">
               <a href="https://www.latimes.com/sports/la-sp-pomona-pitzer-ncaa-basketball-20190227-story.html" target="_blank">
-                <img class="bball-news-img" src="images/bball/news/LA-Times.jpeg">
+                <img class="tile bball-news-img" src="images/bball/news/LA-Times.jpeg">
                 <div class="bball-news-text"><code class="bball-news-code">As the likes of USC and UCLA have struggled, tiny Pomona-Pitzer has big basketball dreams</code></div>
               </a>
             </div>
-
-
             <div class="contain">
               <a href="https://www.sagehens.com/sports/mbkb/2018-19/releases/20190314p865se" target="_blank">
-                <img class="bball-news-img" src="images/bball/news/Academic-All-American.jpg">
+                <img class="tile bball-news-img" src="images/bball/news/Academic-All-American.jpg">
                 <div class="bball-news-text"><code class="bball-news-code">Daniel Rosenbaum Named Academic All-American</code></div>
               </a>
             </div>
-
           </div>
-
           <div class="four columns">
             <div class="contain">
               <a href="https://www.sagehens.com/sports/mbkb/2018-19/releases/2019022421w8lz " target="_blank">
-                <img class="bball-news-img" src="images/bball/news/SCIAC-Champs.jpg">
+                <img class="tile bball-news-img" src="images/bball/news/SCIAC-Champs.jpg">
                 <div class="bball-news-text"><code class="bball-news-code">No. 14 Sagehens Win First SCIAC Title Since 2008, Clinch NCAA Berth</code></div>
               </a>
             </div>
-
             <div class="contain">
               <a href="https://www.thesciac.org/sports/mbkb/2018-19/releases/20190221yjqsc3" target="_blank">
-                <img class="bball-news-img" src="images/bball/news/All-SCIAC.jpg">
+                <img class="tile bball-news-img" src="images/bball/news/All-SCIAC.jpg">
                 <div class="bball-news-text"><code class="bball-news-code">SCIAC Men's Basketball All-Conference Honors Announced</code></div>
               </a>
             </div>
-
           </div>
         </div>
-        
+      </div>
+    </div>
+
+    <!-- Intro Blog Post -->
+    <div id="sagehen-goal-analysis" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="modal_title">Pomona-Pitzer Sagehen Goal Analysis</h5>
+            <p class="modal_subtitle">Which Goals are the Most Important to Winning?</p>
+          </div>
+        </div>
+        <!-- Article content -->
+        <div class="row">
+          <div class="twelve column">
+            <div class="article-text">
+
+
+              <p>
+                As a basketball alumnus of Pomona-Pitzer, I had the great honor of playing for the legendary, 500+ win Coach Charles “Coach Kat” Katsiaficas. He has been the head coach at Pomona-Pitzer since 1988, leading the program to 27 winning seasons, 12 conference championships and a program first Sweet 16 berth this season. During my first year, I remember him telling the team about his goals for each game and how he has used them for countless years with small adjustments along the way, the most notable being when the 3-point line was added. That was when I realized the high-level of experience Coach Kat brought to the program.
+              </p>
+              <img class="center" style="width:80%;" src="images/blog/goals.jpeg"><br>
+
+              <p>
+                It is these specific goals that we will be analyzing now. Although the main objective was always to play “forty minutes of nails”, we will be looking to see which of the goals were the most important to winning.
+              </p>
+
+              <p class="article-heading">The Goals</p>
+              <ol>
+                <li>Shoot better than 48% from the field</li>
+                <li>Hold the opponent under 40% from the field</li>
+                <li>Make more free throws than the opponent shoots</li>
+                <li>Outrebound the opponent</li>
+                <li>17 or more offensive rebounds</li>
+                <li>Under 12 turnovers</li>
+                <li>Force 18 or more turnovers</li>
+                <li>Hold opponent under 30 pts (First Half)</li>
+                <li>Hold opponent under 30 pts (Second Half)</li>
+              </ol>
+              <p>
+                The target is to complete 6 or more goals per game, but any time we get more than 4 or 5 we felt it was a decent showing. There is the ongoing debate among Pomona-Pitzer basketball players about whether it is even possible to get all nine goals in one game, thinking about how by grabbing 17 offensive boards each would almost have to be a put-back to maintain a field goal percentage above 48%. Coach Kat used these exact goals all four years during my tenure and it is now time to take a closer look.
+              </p>
+
+              <p class="article-heading">Quick Analysis</p>
+
+              <p>
+                Looking at the past nine seasons there were 241 (record of 150-91) below we see the number of games each goal was achieved and how many of these games were won. This data, scraped from the Sagehens website, includes this year’s season, huge shoutout to those guys reaching the Sweet 16 for the first time in program history.
+              </p>
+
+              <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                  <th>Goals</th>
+                  <th>Games</th>
+                  <th>Wins</th>
+                  <th>Win Percentage (%)</th>
+                </tr>
+                <tr>
+                  <td>Shooting Percentage</td>
+                  <td>83</td>
+                  <td>75</td>
+                  <td>90.4</td>
+                </tr>
+                <tr>
+                  <td>Opponent Shooting Percentage</td>
+                  <td>100</td>
+                  <td>84</td>
+                  <td>84.0</td>
+                </tr>
+                <tr>
+                  <td>Free Throws</td>
+                  <td>87</td>
+                  <td>74</td>
+                  <td>85.1</td>
+                </tr>
+                <tr>
+                  <td>Rebound Margin</td>
+                  <td>158</td>
+                  <td>117</td>
+                  <td>74.1</td>
+                </tr>
+                <tr>
+                  <td>Offensive Rebounds</td>
+                  <td>14</td>
+                  <td>8</td>
+                  <td>57.2</td>
+                </tr>
+                <tr>
+                  <td>Turnovers</td>
+                  <td>120</td>
+                  <td>79</td>
+                  <td>65.8</td>
+                </tr>
+                <tr>
+                  <td>Force Turnovers</td>
+                  <td>12</td>
+                  <td>7</td>
+                  <td>58.3</td>
+                </tr>
+                <tr>
+                  <td>First Half Points</td>
+                  <td>102</td>
+                  <td>74</td>
+                  <td>72.5</td>
+                </tr>
+                <tr>
+                  <td>Second Half Points</td>
+                  <td>55</td>
+                  <td>43</td>
+                  <td>78.2</td>
+                </tr>
+              </table>
+
+              <p>
+                It seems the two goals around shooting percentage are very highly correlated to winning. If you are able to make your shots or keep your opponent from making theirs, you are doing something right. Specifically looking at Shooting Percentage, I will argue that it is a causal relationship. Of the 83 times the goal was achieved, 75 resulted in a win, meanwhile there were 75 other games that resulted in a win where the goal was not achieved. Thus winning is not determined only by the Shooting Percentage goal, but when that goal is achieved it leads to winning.
+              </p>
+              <p>
+                On the other hand, we can see two goals (Forcing Turnovers and Offensive Rebounding) that were hardly achieved, causing difficulty in drawing conclusions. If we change the turnover goal to be “cause 15 or more” and go through the data again we get better results. Now, we have 35 total games, where 27 were wins for a win percentage of 77.1. This shows much more correlation and means that the goal should probably be updated, and maybe also means teams recent Sagehen teams aren’t causing turnovers like they used to. Offensive Rebounds is trickier as changing the goal value did not converge to a better correlation. This could be due to the importance of shooting percentage and the fact that the only way to get an offensive rebound is first to miss.
+              </p>
+
+
+              <p class="article-heading">Fun Facts</p>
+              <ul>
+                <li>The team is 0-10 when achieving 0 goals.</li>
+                <li>The team is 84-8 when achieving 4 or more goals, 28-1 with five or more and 8-0 with 6 or more.</li>
+                <li>The largest number of goals completed for a single game within the dataset was 7. This was only achieved once in a 96-54 win over Emerson in 2016-17 season.</li>
+                <li>After further research a 92-33 win over Cal Tech in the 2007-08 season was found where the team completed 8 goals. The only goal missed was Free Throws as the team shot 4/11 from the line while Cal Tech shot 3/7. However, this does prove that it is possible to achieve all nine!</li>
+              </ul>
+
+
+              <p class="article-heading">The Model</p>
+              <p>
+                We begin by splitting the data into training (180 games) and testing (71 games) sets, then creating a Multiple Linear Regression model to see if the goals could be used to predict wins.
+              </p>
+              <p>
+                The input for each goal was the difference between the boxscore stat and the target set by the goal. For example, if the team shot 50% then the input would be (50-48) = 2. Here a positive number indicated the goal was achieved or a win for the output. The values were then scaled so that we would be able to compare the coefficients. The model (R^2 = 0.88) was able to correctly predict the outcome of 64 games (of the 71 total) with the following coefficients.
+              </p>
+
+              <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                  <th>Goals</th>
+                  <th>Coefficient</th>
+                </tr>
+                <tr>
+                  <td>Shooting Percentage</td>
+                  <td>7.03</td>
+                </tr><tr>
+                  <td>Opponent Shooting Percentage</td>
+                  <td>5.83</td>
+                </tr><tr>
+                  <td>Free Throws</td>
+                  <td>1.47</td>
+                </tr><tr>
+                  <td>Rebound Margin</td>
+                  <td>5.92</td>
+                </tr><tr>
+                  <td>Offensive Rebound</td>
+                  <td>0.69</td>
+                </tr><tr>
+                  <td>Turnovers</td>
+                  <td>5.02</td>
+                </tr><tr>
+                  <td>Force Turnovers</td>
+                  <td>4.74</td>
+                </tr><tr>
+                  <td>First Half Points</td>
+                  <td>1.03</td>
+                </tr><tr>
+                  <td>Second Half Points</td>
+                  <td>0.96</td>
+                </tr>
+              </table>
+
+              <p>
+                We see Shooting Percentage is far and away the most important goal. Surprisingly, the turnover goals seem to be important as well, for Forcing Turnovers this could very well be because of the small sample size, so we will not continue to look at it. This is only surprising because of the rather insignificant correlation seen above, but definitely makes the basketball player in me feel better. Limiting turnovers is constantly harped on by coaches (Coach Kat included, as would be demonstrated by him punting the ball high into the air “because then at least there is a chance it goes in”) and due to their impact in the number of possessions are an integral part of the game. It is good to see that turnovers show their importance here. Looking at the top four goals, if they were all achieved the team is 11-0 and if at least three of them were achieved then the team is 62-2, meaning each one definitely plays a part in winning.
+              </p>
+
+              <p class="article-heading">The Graphs</p>
+              <p>
+                Below we can see each goal graphed separately. Each x-axis represents the goal difference, same as the input to the model above, and the y-axis represents the point differential for the game. Each graph has also been fitted with a regression line (some better than others) and its corresponding R^2 in the top left corner.
+              </p>
+
+              <img class="center" style="width:100%;" src="images/blog/graphs.png"><br>
+
+              <p>
+                Graphically it is easier to see how some goals do not seem to have much of a bearing on winning. Although important for the model, now it is a bummer to see how reducing turnovers does not seem to be a difference maker in wins or losses. We can also see why the shift discussed above to change Force Turnovers to 15 resulted in a much better correlation and why there was no such convergence for Offensive Rebounds (that graph looks randomized!). It is also interesting to note how the two goals actually associated with points have not been a large factor throughout. As we can see in the graphs, there seems to be a larger correlation for these two goals towards the extremes. But, teams are going to make shots and in the majority of cases scoring is around the 30 point mark per half so not a huge difference can be seen between wins and losses. This seems to be an argument for quality over quantity, since percentages are so important, and against teams who play fast and try to maximize the number of shots. Again, in the end the shooting percentage goals and rebounding margin seem to carry much more weight than the others.
+              </p>
+
+              <p class="article-heading">The Meaning</p>
+              <p>
+                The most important goals throughout this analysis have been Shooting Percentage, Opponent Shooting Percentage and Rebound Margin. The team is 27-0 when achieving all three of these goals. By achieving at least two, the team is 107-10, and by getting at least one of these three we can cover almost all of the wins as the team is 142-55. There were only eight wins in the past nine seasons where none of these three goals were achieved.
+              </p>
+              <p>
+                These three goals are also fairly interconnected as the only way to get a rebound is to first miss a shot. By shooting a high percentage you limit the number of defensive rebounds available to the other team, the opposite is true by holding the opponent to a lower percentage, thus increasing the chances for a larger rebound margin. You could argue then that Rebound Margin is an effect of the shooting percentage goals. So, if we just look at the shooting percentage goals we see by achieving both the team is 34-1 and 125-23 when achieving at least one of them. This has historic significance as well in terms of past Sagehen teams. The only two teams in the past 14 seasons to have a season average above 48% are this year’s Sweet 16 team and last year’s team, who recorded the winningest season ever in program history. This is also a common trend over the past 14 seasons as we can see in the graph below, fitted with a Linear Regression line (R^2 = 0.75).
+              </p>
+
+              <img class="center" style="width:70%;" src="images/blog/fg-wins.png"><br>
+
+              <p>
+                That field goal percentage is most important to winning is certainly not an unexpected result. What is more interesting is that stats like turnovers and offensive rebounds, stats that are so often lauded by coaches, are relatively unimportant. I hope these findings give Coach Kat more firm ground to stand on for some goals and possibly raise some questions for the others. And now now someone has something to say when he asks the perpetual question, “anything from anyone, about anything?”
+              </p>
+
+              <p class="article-heading">Additional Info</p>
+              <p>
+                If we do not scale the independent variables before putting them into our model then the coefficients we are left with determine the additional difference in points for one additional unit of that goal.
+              </p>
+
+              <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                  <th>Goals</th>
+                  <th>Coefficient</th>
+                </tr>
+                <tr>
+                  <td>Shooting Percentage</td>
+                  <td>0.88</td>
+                </tr><tr>
+                  <td>Opponent Shooting Percentage</td>
+                  <td>0.81</td>
+                </tr><tr>
+                  <td>Free Throws</td>
+                  <td>0.18</td>
+                </tr><tr>
+                  <td>Rebound Margin</td>
+                  <td>0.60</td>
+                </tr><tr>
+                  <td>Offensive Rebound</td>
+                  <td>0.17</td>
+                </tr><tr>
+                  <td>Turnovers</td>
+                  <td>1.32</td>
+                </tr><tr>
+                  <td>Force Turnovers</td>
+                  <td>1.33</td>
+                </tr><tr>
+                  <td>First Half Points</td>
+                  <td>0.21</td>
+                </tr><tr>
+                  <td>Second Half Points</td>
+                  <td>0.13</td>
+                </tr>
+              </table>
+
+              <p>
+                We can see that every turnover under the target of 12 is the most rewarding in the final score, while grabbing 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 or 28 offensive rebounds does not help much.
+              </p>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
 

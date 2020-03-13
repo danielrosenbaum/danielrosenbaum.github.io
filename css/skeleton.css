@@ -288,11 +288,12 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: circle inside;
+  list-style-position: outside;}
 ol {
   list-style: decimal inside; }
 ol, ul {
-  padding-left: 0;
+  padding-left: 40px;
   margin-top: 0; }
 ul ul,
 ul ol,
@@ -324,16 +325,19 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 12px 15px;
+  padding: 6px 9px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
-  padding-left: 0; }
+  padding-left: 0;
+  text-align: left;}
 th:last-child,
 td:last-child {
   padding-right: 0; }
-
+td{
+  text-align: center;
+}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
